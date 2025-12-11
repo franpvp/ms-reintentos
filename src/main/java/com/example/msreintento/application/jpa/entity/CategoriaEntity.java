@@ -21,5 +21,8 @@ public class CategoriaEntity {
 
     @Column(name = "descripcion")
     private String descripcion;
+
+    @Column(name = "nombre_directorio")
+    private String nombreDirectorio;
 }
 

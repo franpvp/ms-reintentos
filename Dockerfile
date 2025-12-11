@@ -12,7 +12,7 @@ ENV TZ=America/Santiago
 # Copiar el wallet a la imagen
 COPY Wallet_DQXABCOJF1X64NFC /app/wallet
 
-COPY --from=build /app/target/ms-ordenes-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/ms-reintentos-0.0.1-SNAPSHOT.jar app.jar
 
 ENV KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
     KAFKA_TOPIC_PAGO_PENDIENTE=pago-pendiente \
