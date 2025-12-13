@@ -1,15 +1,15 @@
 package com.example.msreintento.application.jpa.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Table(name = "DETALLE_ORDEN")
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class DetalleOrdenEntity {
 
     @Id

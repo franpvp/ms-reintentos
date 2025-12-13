@@ -1,18 +1,17 @@
 package com.example.msreintento.application.jpa.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
-import java.time.OffsetDateTime;
 
 @Entity
 @Table(name = "REINTENTO_PAGO")
 @Getter
 @Setter
-@Builder(toBuilder = true)
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class ReintentoPagoEntity {
 
     @Id

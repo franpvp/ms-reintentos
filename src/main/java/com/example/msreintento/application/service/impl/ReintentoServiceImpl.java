@@ -58,6 +58,7 @@ public class ReintentoServiceImpl implements ReintentoService {
 
             pagoPendienteProducer.enviar(PagoDto.builder()
                             .idOrden(pagoErrorEvent.getIdOrden())
+                            .reprocesado(true)
                     .build()
 
             );
@@ -86,6 +87,7 @@ public class ReintentoServiceImpl implements ReintentoService {
         pagoPendienteProducer.enviar(
                 PagoDto.builder()
                         .idOrden(pagoErrorEvent.getIdOrden())
+                        .reprocesado(true)
                         .build()
         );
 

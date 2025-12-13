@@ -1,19 +1,17 @@
 package com.example.msreintento.application.jpa.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-
 
 @Entity
 @Table(name = "CLIENTE")
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class ClienteEntity {
 
     @Id
@@ -43,5 +41,4 @@ public class ClienteEntity {
     @Column(name = "fecha_registro", nullable = false)
     private LocalDateTime fechaRegistro;
 }
-
 

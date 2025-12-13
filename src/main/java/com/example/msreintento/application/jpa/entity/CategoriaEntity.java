@@ -1,14 +1,16 @@
 package com.example.msreintento.application.jpa.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 
 @Entity
 @Table(name = "CATEGORIA")
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class CategoriaEntity {
 
     @Id
